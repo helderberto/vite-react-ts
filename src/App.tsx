@@ -3,7 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "./store";
-import { decrement, increment } from "./store/counter/counterSlice";
+import { decrement, increment } from "./features/counter/counterSlice";
 
 function App() {
   const count = useSelector((state: RootState) => state.counter.value);
